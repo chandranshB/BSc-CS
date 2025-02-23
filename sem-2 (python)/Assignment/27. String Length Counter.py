@@ -1,0 +1,1 @@
+print(f"The text you entered was {len(input("Enter the text: "))} characters long")
