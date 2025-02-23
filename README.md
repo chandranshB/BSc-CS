@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # BSc-CS
 
 Welcome to **BSc-CS**, a comprehensive repository showcasing my journey through my BSc in Computer Science. This repository organizes all of my college coding work by semester, offering a clear and structured view of my projects, assignments, and coursework.
