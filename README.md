@@ -32,15 +32,28 @@ BSc-CS/
 │       ├── m6.py
 │       └── set2.py
 └── sem-5/
-    └── compiler-design/
-        ├── 01-lexical-analyzer/
-        ├── 02-first-and-follow/
-        ├── 03-ll1-parser/
-        ├── 04-operator-precedence-parser/
-        ├── 05-lr0-parser/
-        ├── 06-slr1-parser/
-        ├── 07-clr1-parser/
-        ├── 08-lalr1-parser/
+    ├── compiler-design/
+    │   ├── 01-lexical-analyzer/
+    │   ├── 02-first-and-follow/
+    │   ├── 03-ll1-parser/
+    │   ├── 04-operator-precedence-parser/
+    │   ├── 05-lr0-parser/
+    │   ├── 06-slr1-parser/
+    │   ├── 07-clr1-parser/
+    │   ├── 08-lalr1-parser/
+    │   └── README.md
+    └── operating-systems/
+        ├── 01-process-creation.py
+        ├── 02-thread-creation-and-management.py
+        ├── 03-cpu-scheduling-algorithms.py
+        ├── 04-process-synchronization-prod-con.py
+        ├── 05-process-synchronization-read-write.py
+        ├── 06-dining-philosophers-problem.py
+        ├── 07-bankers-algorithm.py
+        ├── 08-contiguous-memory-allocation.py
+        ├── 09-page-replacement-algorithm.py
+        ├── 10-disk-scheduling-algorithm.py
+        ├── 11-file-allocation-methods.py
         └── README.md
 ```
 
@@ -78,6 +91,20 @@ Beginner-friendly, clean implementations of core compiler front-end practicals:
 6. `06-slr1-parser/`: Simple LR parser resolving reduce actions via `FOLLOW` sets to eliminate conflicts.
 7. `07-clr1-parser/`: Canonical LR(1) parser with lookaheads $[A \to \alpha . \beta, a]$ and parsing simulation.
 8. `08-lalr1-parser/`: Look-Ahead LR parser merging states with identical LR(0) cores with parsing simulation.
+
+### Semester 5: Operating Systems (`sem-5/operating-systems/`)
+Standard lab practicals implemented in Python 3:
+1. `01-process-creation.py`: Process creation and management using `fork()`, `exec()`, and `wait()`.
+2. `02-thread-creation-and-management.py`: Multi-threading array partial sum computation using `threading`.
+3. `03-cpu-scheduling-algorithms.py`: CPU scheduling algorithms (FCFS, SJF, Priority, Round Robin).
+4. `04-process-synchronization-prod-con.py`: Producer-Consumer synchronization using semaphores.
+5. `05-process-synchronization-read-write.py`: Readers-Writers synchronization using semaphores.
+6. `06-dining-philosophers-problem.py`: Dining Philosophers synchronization using semaphores.
+7. `07-bankers-algorithm.py`: Deadlock avoidance using Banker's Algorithm (safety and resource request).
+8. `08-contiguous-memory-allocation.py`: Contiguous memory allocation (First Fit, Best Fit, Worst Fit).
+9. `09-page-replacement-algorithm.py`: Page replacement algorithms (FIFO, LRU, Optimal).
+10. `10-disk-scheduling-algorithm.py`: Disk scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN).
+11. `11-file-allocation-methods.py`: File allocation methods (Contiguous, Linked, Indexed).
 
 ## Running the Code
 
@@ -144,4 +171,23 @@ python 07-clr1-parser/clr1_parser.py 07-clr1-parser/sample_grammar.txt "c c d d"
 
 # Practical 08: LALR(1) Parser
 python 08-lalr1-parser/lalr1_parser.py 08-lalr1-parser/sample_grammar.txt "c c d d"
+```
+
+### Operating Systems Practicals (Semester 5)
+Run any practical directly with Python 3:
+
+```bash
+cd "sem-5/operating-systems"
+
+python 01-process-creation.py
+python 02-thread-creation-and-management.py
+python 03-cpu-scheduling-algorithms.py
+python 04-process-synchronization-prod-con.py
+python 05-process-synchronization-read-write.py
+python 06-dining-philosophers-problem.py
+python 07-bankers-algorithm.py
+python 08-contiguous-memory-allocation.py
+python 09-page-replacement-algorithm.py
+python 10-disk-scheduling-algorithm.py
+python 11-file-allocation-methods.py
 ```
