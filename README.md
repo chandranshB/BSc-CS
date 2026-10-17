@@ -1,58 +1,69 @@
 # BSc-CS
 
-Welcome to **BSc-CS**, a comprehensive repository showcasing my journey through my BSc in Computer Science. This repository organizes all of my college coding work by semester, offering a clear and structured view of my projects, assignments, and coursework.
+Practical coursework and assignments for Bachelor of Science in Computer Science.
 
-## Overview
-
-**BSc-CS** is designed to document my academic progression. Each semester is divided into subject-specific directories that house code samples, projects, and assignments. This organized approach not only serves as a portfolio of my growth as a developer but also acts as a personal archive for future reference.
-
-## Repository Structure
-```bash
-BSc-CS/
-├── Sem-1/
-│   ├── [Subject-1]/
-│   │   ├── assignments/
-│   │   └── projects/
-│   ├── [Subject-2]/
-│   └── ...
-├── Sem-2/
-│   ├── [Subject-1]/
-│   ├── [Subject-2]/
-│   └── ...
-├── ...
-└── README.md
+## Repository Layout
 
 ```
+BSc-CS/
+├── sem-1 (C)/
+│   └── (C programming coursework)
+└── sem-2 (python)/
+    ├── mid-sem/
+    │   ├── 01. Vowel Count in input.py
+    │   ├── 02. Even Counter in list.py
+    │   ├── 03. Palindrome number Checker.py
+    │   └── ... (30 fundamental practice scripts)
+    └── end-sem/
+        ├── mypackage/
+        │   ├── __init__.py
+        │   ├── dict3.py
+        │   ├── list1.py
+        │   └── set2.py
+        ├── cal1.py
+        ├── dict3.py
+        ├── exceptions.py
+        ├── list1.py
+        ├── m4.py
+        ├── m5.py
+        ├── m6.py
+        └── set2.py
+```
 
+## Contents
 
-Each directory may include its own README file to provide context, instructions, and insights specific to the coursework contained within.
+### Semester 2: Python
 
-## Repository Stats
+#### Mid-Sem (`sem-2 (python)/mid-sem/`)
+Thirty foundational Python programs covering:
+- Strings: vowel counting, reversals, spammer, string length, word count, case identification
+- Numbers and math: palindrome checks, Armstrong numbers, factorial, Fibonacci series, prime checks, even/odd filters
+- Data structures: list operations, tuple uniqueness and element sums, set operations and multipliers, dictionary iterations and key filtering
 
-Below are some dynamic badges that showcase my coding activity and highlight the primary programming languages I use:
+#### End-Sem (`sem-2 (python)/end-sem/`)
+End-semester practical work covering modular programming, custom package structure, and exception handling:
+- `cal1.py`: Arithmetic module providing add, sub, mul, div, mod, and pow functions.
+- `list1.py`, `dict3.py`, `set2.py`: Custom utility modules implementing common data structure operations.
+- `mypackage/`: Custom Python package re-exporting list, set, and dictionary operations through `__init__.py`.
+- `m4.py`, `m5.py`, `m6.py`: Driver scripts demonstrating module imports, calculator operations, and package imports.
+- `exceptions.py`: Demonstration of handling Python built-in exceptions (`ZeroDivisionError`, `NameError`, `KeyError`, `IndexError`, `ValueError`, `AttributeError`, `FileNotFoundError`, `ModuleNotFoundError`, and generic `Exception`).
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=chandranshB&show_icons=true&hide=stars,forks&theme=default)](https://github.com/chandranshB)
+## Running the Code
 
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=chandranshB&layout=compact&theme=default)](https://github.com/chandranshB)
+### Mid-Sem Programs
+Run any script directly using Python 3:
 
-*These stats update automatically to reflect my ongoing contributions and the languages I work with most.*
+```bash
+python "sem-2 (python)/mid-sem/01. Vowel Count in input.py"
+```
 
-## Getting Started
+### End-Sem Programs
+To execute the driver scripts, run from within the `end-sem` directory so local modules and `mypackage` are resolved:
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/chandranshB/BSc-CS.git
-Navigate to a Semester/Subject Directory:
-cd BSc-CS/Semester-1/[Subject-Name]
-Review the Documentation:
-Each folder includes its own README to help you understand the context and purpose of the files within.
-Contributing
-As I continue to develop my skills, contributions and constructive feedback are welcome. If you have suggestions or improvements, please open an issue or submit a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
-For inquiries or further information, feel free to reach out at [chandranshbinjola@outlook.com].
-
-Thank you for exploring BSc-CS. Your interest in my work is greatly appreciated, and I look forward to contributing more as I grow in my career!
+```bash
+cd "sem-2 (python)/end-sem"
+python m4.py
+python m5.py
+python m6.py
+python exceptions.py
+```
