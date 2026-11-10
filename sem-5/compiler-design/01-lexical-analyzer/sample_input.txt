@@ -1,0 +1,14 @@
+int main() {
+    int num = 5;
+    float fact = 1.0;
+    char grade = 'A';
+    // Loop to calculate factorial
+    while (num > 0) {
+        fact = fact * num;
+        num--;
+    }
+    if (fact >= 120.0) {
+        printf("Success: %f\n", fact);
+    }
+    return 0;
+}
